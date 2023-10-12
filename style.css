@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+}
+
+#canvas {
+    border: 1px solid white;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    height: 100vh;
+}
+
+.main-wrapper h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.main-wrapper h1 span {
+    color: white;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.cta-wrappers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+}
+
+.cta, .cta-send {
+    padding: 1em;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.cta:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.cta.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.prompt-user {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+    backdrop-filter: blur(2px);
+}
+.display {
+    display: flex;
+}
+
+.opacity {
+    opacity: 1 !important;
+}
+
+.error {
+    opacity: 0;
+    color: red;
+}
+
+.prompt-user h1 {
+    color: white;
+    font-size: 2em;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1em;
+    caret-color: white;
+    outline: none;
+    color: white;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2% 0;
+}
+
+.chat-wrapper {
+    display: flex;
+    flex-direction: column;  
+    gap: 1em;
+}
+.messages-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 1em;
+    height: 320px;
+    overflow-y: scroll;
+}
+
+.messages-wrapper .message p {
+    color: white;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.userName {
+    color: rgba(255, 255, 255, 0.584) !important;
+}

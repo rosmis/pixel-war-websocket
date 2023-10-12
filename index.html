@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket pixel war</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <body>
+        <div class="main-wrapper">
+            <h1>PIXEL WAR <span>by rosmis</span></h1>
+
+            <div class="container">
+                <canvas id="canvas" width="500" height="500"></canvas>
+
+                <div class="actions-wrapper">
+
+                    <div class="cta-wrappers">
+                        <div class="cta add active">
+                            Ajouter un bloc
+                        </div>
+
+                        <div class="cta remove">
+                            Retirer un bloc
+                        </div>
+                    </div>
+
+                    <div class="chat-wrapper">
+                        <div class="messages-wrapper"></div>
+
+                        <div class="input-wrapper">
+                            <input type="text" id="chat-input" placeholder="Votre message">
+
+                            <div class="cta-send">
+                                Envoyer
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="prompt-user">
+            <h1>Rentre ton blaze pour jouer</h1>
+            <input type="text" placeholder="Ton blaze monsieur" id="userInput">
+            <p class="error">Veuillez rentrer votre blaze pour commencer</p>
+
+            <div class="cta userName">
+                Jouer
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
